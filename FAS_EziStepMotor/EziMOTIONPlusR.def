@@ -1,0 +1,163 @@
+LIBRARY     EZIMOTIONPLUSR.DLL
+
+EXPORTS
+    FAS_AllEmergencyStop           @1   ; FAS_AllEmergencyStop
+    FAS_AllMoveOriginSingleAxis    @2   ; FAS_AllMoveOriginSingleAxis
+    FAS_AllMoveSingleAxisAbsPos    @3   ; FAS_AllMoveSingleAxisAbsPos
+    FAS_AllMoveSingleAxisIncPos    @4   ; FAS_AllMoveSingleAxisIncPos
+    FAS_AllMoveStop                @5   ; FAS_AllMoveStop
+    FAS_AttachSlave                @6   ; FAS_AttachSlave
+    FAS_ClearLatch                 @7   ; FAS_ClearLatch
+    FAS_ClearLatchCount            @8   ; FAS_ClearLatchCount
+    FAS_ClearPosition              @9   ; FAS_ClearPosition
+    FAS_Close                      @10  ; FAS_Close
+    FAS_Connect                    @11  ; FAS_Connect
+    FAS_EmergencyStop              @22  ; FAS_EmergencyStop
+    FAS_EnableLog                  @23  ; FAS_EnableLog
+    FAS_GapControlDisable          @27  ; FAS_GapControlDisable
+    FAS_GapControlEnable           @28  ; FAS_GapControlEnable
+    FAS_GapControlGetADCValue      @29  ; FAS_GapControlGetADCValue
+    FAS_GapOneResultMonitor        @30  ; FAS_GapOneResultMonitor
+    FAS_GetADResult                @31  ; FAS_GetADResult
+    FAS_GetActualPos               @32  ; FAS_GetActualPos
+    FAS_GetActualVel               @33  ; FAS_GetActualVel
+    FAS_GetAlarmLogs               @34  ; FAS_GetAlarmLogs
+    FAS_GetAlarmType               @35  ; FAS_GetAlarmType
+    FAS_GetAllADResult             @37  ; FAS_GetAllADResult
+    FAS_GetAllStatus               @38  ; FAS_GetAllStatus
+    FAS_GetAllStatusEx             @39  ; FAS_GetAllStatusEx
+    FAS_GetAxisStatus              @42  ; FAS_GetAxisStatus
+    FAS_GetCommandPos              @44  ; FAS_GetCommandPos
+    FAS_GetIOAssignMap             @47  ; FAS_GetIOAssignMap
+    FAS_GetIOAxisStatus            @48  ; FAS_GetIOAxisStatus
+    FAS_GetIOInput                 @49  ; FAS_GetIOInput
+    FAS_GetIOLevel                 @52  ; FAS_GetIOLevel
+    FAS_GetIOOutput                @53  ; FAS_GetIOOutput
+    FAS_GetInput                   @56  ; FAS_GetInput
+    FAS_GetInputFilter             @58  ; FAS_GetInputFilter
+    FAS_GetLatchCount              @59  ; FAS_GetLatchCount
+    FAS_GetLatchCountAll           @61  ; FAS_GetLatchCountAll
+    FAS_GetLatchCountAll32         @60  ; FAS_GetLatchCountAll32
+    FAS_GetMotionStatus            @62  ; FAS_GetMotionStatus
+    FAS_GetMotorInfo               @64  ; FAS_GetMotorInfo
+    FAS_GetOutput                  @65  ; FAS_GetOutput
+    FAS_GetParameter               @67  ; FAS_GetParameter
+    FAS_GetPosError                @68  ; FAS_GetPosError
+    FAS_GetPushStatus              @70  ; FAS_GetPushStatus
+    FAS_GetROMParameter            @71  ; FAS_GetROMParameter
+    FAS_GetSlaveInfo               @73  ; FAS_GetSlaveInfo
+    FAS_GetSlaveInfoEx             @74  ; FAS_GetSlaveInfoEx
+    FAS_GetTriggerCount            @75  ; FAS_GetTriggerCount
+    FAS_GetTriggerOutputEx         @76  ; FAS_GetTriggerOutputEx
+    FAS_IOAssignMapReadROM         @77  ; FAS_IOAssignMapReadROM
+    FAS_IsGapControlEnable         @79  ; FAS_IsGapControlEnable
+    FAS_IsSlaveExist               @82  ; FAS_IsSlaveExist
+    FAS_LoadIOLevel                @83  ; FAS_LoadIOLevel
+    FAS_MoveLinearAbsPos           @85  ; FAS_MoveLinearAbsPos
+    FAS_MoveLinearAbsPos2          @84  ; FAS_MoveLinearAbsPos2
+    FAS_MoveLinearIncPos           @87  ; FAS_MoveLinearIncPos
+    FAS_MoveLinearIncPos2          @86  ; FAS_MoveLinearIncPos2
+    FAS_MoveOriginSingleAxis       @88  ; FAS_MoveOriginSingleAxis
+    FAS_MovePause                  @89  ; FAS_MovePause
+    FAS_MovePush                   @90  ; FAS_MovePush
+    FAS_MoveSingleAxisAbsPos       @91  ; FAS_MoveSingleAxisAbsPos
+    FAS_MoveSingleAxisAbsPosEx     @92  ; FAS_MoveSingleAxisAbsPosEx
+    FAS_MoveSingleAxisIncPos       @93  ; FAS_MoveSingleAxisIncPos
+    FAS_MoveSingleAxisIncPosEx     @94  ; FAS_MoveSingleAxisIncPosEx
+    FAS_MoveStop                   @95  ; FAS_MoveStop
+    FAS_MoveToLimit                @96  ; FAS_MoveToLimit
+    FAS_MoveVelocity               @97  ; FAS_MoveVelocity
+    FAS_MoveVelocityEx             @98  ; FAS_MoveVelocityEx
+    FAS_OpenPort                   @101 ; FAS_OpenPort
+    FAS_PosTableReadItem           @104 ; FAS_PosTableReadItem
+    FAS_PosTableReadOneItem        @105 ; FAS_PosTableReadOneItem
+    FAS_PosTableReadROM            @106 ; FAS_PosTableReadROM
+    FAS_PosTableRunItem            @107 ; FAS_PosTableRunItem
+    FAS_PosTableSingleRunItem      @108 ; FAS_PosTableSingleRunItem
+    FAS_PosTableWriteItem          @109 ; FAS_PosTableWriteItem
+    FAS_PosTableWriteOneItem       @110 ; FAS_PosTableWriteOneItem
+    FAS_PosTableWriteROM           @111 ; FAS_PosTableWriteROM
+    FAS_PositionAbsOverride        @112 ; FAS_PositionAbsOverride
+    FAS_PositionIncOverride        @113 ; FAS_PositionIncOverride
+    FAS_PrintCustomLog             @114 ; FAS_PrintCustomLog
+    FAS_ResetAlarmLogs             @117 ; FAS_ResetAlarmLogs
+    FAS_SaveAllParameters          @124 ; FAS_SaveAllParameters
+    FAS_SaveIOLevel                @125 ; FAS_SaveIOLevel
+    FAS_ServoAlarmReset            @126 ; FAS_ServoAlarmReset
+    FAS_ServoEnable                @127 ; FAS_ServoEnable
+    FAS_SetADRange                 @128 ; FAS_SetADRange
+    FAS_SetActualPos               @129 ; FAS_SetActualPos
+    FAS_SetCommandPos              @131 ; FAS_SetCommandPos
+    FAS_SetIOAssignMap             @134 ; FAS_SetIOAssignMap
+    FAS_SetIOInput                 @135 ; FAS_SetIOInput
+    FAS_SetIOLevel                 @138 ; FAS_SetIOLevel
+    FAS_SetIOOutput                @139 ; FAS_SetIOOutput
+    FAS_SetInputFilter             @141 ; FAS_SetInputFilter
+    FAS_SetLogLevel                @143 ; FAS_SetLogLevel
+    FAS_SetLogPath                 @144 ; FAS_SetLogPath
+    FAS_SetOutput                  @145 ; FAS_SetOutput
+    FAS_SetParameter               @147 ; FAS_SetParameter
+    FAS_SetRunStop                 @148 ; FAS_SetRunStop
+    FAS_SetTrigger                 @149 ; FAS_SetTrigger
+    FAS_SetTriggerOutputEx         @150 ; FAS_SetTriggerOutputEx
+    FAS_StepAlarmReset             @152 ; FAS_StepAlarmReset
+    FAS_TriggerOutput_RunA         @153 ; FAS_TriggerOutput_RunA
+    FAS_TriggerOutput_Status       @154 ; FAS_TriggerOutput_Status
+    FAS_VelocityOverride           @156 ; FAS_VelocityOverride
+    FAS_ControlReboot             = _FAS_ControlReboot@8                
+    FAS_CustomizeCommand          = _FAS_CustomizeCommand@16            
+    FAS_DetachSlave               = _FAS_DetachSlave@8                  
+    FAS_Drive2Function            = _FAS_Drive2Function@28              
+    FAS_Drive2GetParam            = _FAS_Drive2GetParam@16              
+    FAS_Drive2SetParam            = _FAS_Drive2SetParam@16              
+    FAS_DriverFunction            = _FAS_DriverFunction@12              
+    FAS_DriverGetParam            = _FAS_DriverGetParam@16              
+    FAS_DriverGetVersion          = _FAS_DriverGetVersion@12            
+    FAS_DriverSetParam            = _FAS_DriverSetParam@16              
+    FAS_EraseBootROM              = _FAS_EraseBootROM@8                 
+    FAS_EraseFLASH                = _FAS_EraseFLASH@8                   
+    FAS_EraseNetbaseROM           = _FAS_EraseNetbaseROM@8              
+    FAS_GetAllABSStatus_V8        = _FAS_GetAllABSStatus_V8@40          
+    FAS_GetAllStatusEx_V8         = _FAS_GetAllStatusEx_V8@44           
+    FAS_GetAllStatus_V8           = _FAS_GetAllStatus_V8@40             
+    FAS_GetCalibrationResult      = _FAS_GetCalibrationResult@12        
+    FAS_GetFirmwareInfo           = _FAS_GetFirmwareInfo@12             
+    FAS_GetHiddenParam            = _FAS_GetHiddenParam@16              
+    FAS_GetIOInputEx_V8           = _FAS_GetIOInputEx_V8@16             
+    FAS_GetIOInput_V8             = _FAS_GetIOInput_V8@12               
+    FAS_GetIOStatusEx_V8          = _FAS_GetIOStatusEx_V8@20            
+    FAS_GetIOStatus_V8            = _FAS_GetIOStatus_V8@16              
+    FAS_GetInputAssignMap_V8      = _FAS_GetInputAssignMap_V8@20        
+    FAS_GetMotionStatus_V8        = _FAS_GetMotionStatus_V8@28          
+    FAS_GetOutputAssignMap_V8     = _FAS_GetOutputAssignMap_V8@20       
+    FAS_GetProtocolVersion        = _FAS_GetProtocolVersion@8           
+    FAS_GetRunPTStatus_V8         = _FAS_GetRunPTStatus_V8@12           
+    FAS_IsBootROMErased           = _FAS_IsBootROMErased@12             
+    FAS_IsROMErased               = _FAS_IsROMErased@12                 
+    FAS_IsRunROMExist             = _FAS_IsRunROMExist@12               
+    FAS_ObjectRead                = _FAS_ObjectRead@16                  
+    FAS_ObjectWrite               = _FAS_ObjectWrite@16                 
+    FAS_PosTableIsData            = _FAS_PosTableIsData@12              
+    FAS_PosTableIsDataEx          = _FAS_PosTableIsDataEx@16            
+    FAS_RebootBootROM             = _FAS_RebootBootROM@8                
+    FAS_RebootRunROM              = _FAS_RebootRunROM@8                 
+    FAS_SERVOGetEncoder           = _FAS_SERVOGetEncoder@12             
+    FAS_STEPGetCurrent            = _FAS_STEPGetCurrent@16              
+    FAS_STEPGetMotorDB            = _FAS_STEPGetMotorDB@12              
+    FAS_STEPSetCurrent            = _FAS_STEPSetCurrent@12              
+    FAS_STEPSetMotorDB            = _FAS_STEPSetMotorDB@12              
+    FAS_STEPVersion               = _FAS_STEPVersion@16                 
+    FAS_SetCalibrationData        = _FAS_SetCalibrationData@20          
+    FAS_SetHiddenParam            = _FAS_SetHiddenParam@12              
+    FAS_SetIDValue                = _FAS_SetIDValue@16                  
+    FAS_SetIOInputEx_V8           = _FAS_SetIOInputEx_V8@24             
+    FAS_SetIOInput_V8             = _FAS_SetIOInput_V8@24               
+    FAS_SetInputAssignMap_V8      = _FAS_SetInputAssignMap_V8@20        
+    FAS_SetLogFileName            = _FAS_SetLogFileName@4               
+    FAS_SetOutputAssignMap_V8     = _FAS_SetOutputAssignMap_V8@20       
+    FAS_StartCalibration          = _FAS_StartCalibration@8             
+    FAS_UpdateProgressNetbaseROM  = _FAS_UpdateProgressNetbaseROM@12      
+    FAS_WriteBootROM              = _FAS_WriteBootROM@20                
+    FAS_WriteDoneNetbaseROM       = _FAS_WriteDoneNetbaseROM@8          
+    FAS_WriteFLASH                = _FAS_WriteFLASH@20                  
+    FAS_WriteNetbaseROM           = _FAS_WriteNetbaseROM@20             
