@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FF7E31DA-9169-4AD4-8D83-8C30CD7E0452}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="GEMProgram\GEM.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VSPO.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="GEM">
+        <MSBuild Projects="GEMProgram\GEM.cbproj"/>
+    </Target>
+    <Target Name="GEM:Clean">
+        <MSBuild Projects="GEMProgram\GEM.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GEM:Make">
+        <MSBuild Projects="GEMProgram\GEM.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="VSPO">
+        <MSBuild Projects="VSPO.cbproj"/>
+    </Target>
+    <Target Name="VSPO:Clean">
+        <MSBuild Projects="VSPO.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VSPO:Make">
+        <MSBuild Projects="VSPO.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="GEM;VSPO"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="GEM:Clean;VSPO:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="GEM:Make;VSPO:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

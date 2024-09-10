@@ -1,0 +1,339 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup/>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="$(BDS)\bin\cc32270mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>cc32270mt.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\FORMAT.SML" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>FORMAT.SML</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\FORMAT.SML" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>FORMAT.SML</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32c270mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>cc32c270mt.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\에러코드.xlsx" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>에러코드.xlsx</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\Language.ini" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>Language.ini</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Bin\RPTID_JSCK.TXT" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>RPTID_JSCK.TXT</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\SVID.TXT" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>SVID.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\SVID.TXT" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>SVID.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="BIN\VSPO.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>VSPO.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\RPTID_COWELL.TXT" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>RPTID_COWELL.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="BIN\VSPO.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>VSPO.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Data\ErrDef.mdb" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>ErrDef.mdb</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\ALID.TXT" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>ALID.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\ALID.TXT" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>ALID.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\CEID.TXT" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>CEID.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\RPTID.TXT" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>RPTID.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="BIN\VSPO.tds" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>VSPO.tds</RemoteName>
+            <DeployClass>DebugSymbols</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\RPTID.TXT" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>RPTID.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32c270.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>cc32c270.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\borlndmm.dll" Condition="'$(UsingDelphiRTL)'=='true'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>borlndmm.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32270.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>cc32270.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Includes\AXT\AXTLIB.lib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>AXTLIB.lib</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Bin\CEID_JSCK.TXT" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>CEID_JSCK.TXT</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Bin\GEM.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>GEM.exe</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\CEID.TXT" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>CEID.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\GEM\RPTID_COWELL.TXT" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>RPTID_COWELL.TXT</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Bin\FORMAT.SML" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>FORMAT.SML</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Includes\AXT\AXTLIB.lib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>AXTLIB.lib</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\Language.ini" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>Language.ini</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\ErrDef.mdb" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>ErrDef.mdb</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Data\에러코드.xlsx" Condition="'$(Config)'=='Release'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>에러코드.xlsx</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Bin\SVID_JSCK.TXT" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>SVID_JSCK.TXT</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="$(BDS)\bin64\cc64270.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>cc64270.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin64\cc64270mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>cc64270mt.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin64\borlndmm.dll" Condition="'$(UsingDelphiRTL)'=='true'">
+            <RemoteDir>VSPO\</RemoteDir>
+            <RemoteName>borlndmm.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'"/>
+</Project>
